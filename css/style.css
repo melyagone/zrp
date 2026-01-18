@@ -13,7 +13,7 @@
 	box-sizing: border-box
 }
 
-
+/*
 :root {
   --color-primary: #00d7b3;
   --color-primary2: #06b99b;
@@ -31,7 +31,25 @@
   --color-light-grey3: #535d5f;
   --color-grey: #2b373a;
   --color-black: #000;
-  
+}
+*/
+:root {
+  --color-primary: #d40000; /**/
+  --color-primary2: #06b99b; 
+  --color-primary3: #d40000; /**/
+  --color-secondary: #520000; /*#1cbdf9;*/
+  --color-secondary2: #1396e1; /**/
+
+  --color-tertiary: #e61852; /**/
+  --color-red: #ea2e68;
+	
+  --color-white: #fff;
+  --color-light: #ebebeb;
+  --color-light-grey: #b2b2b2;
+  --color-light-grey2: #888;
+  --color-light-grey3: #535d5f;
+  --color-grey: #2b373a;
+  --color-black: #000;
 }
 
 h1,
@@ -598,7 +616,7 @@ input[type="checkbox"]:checked+label>span>span {
 }
 
 .button.primary:hover {
-	background-color: #0ae7c2
+	background-color: var(--color-tertiary)
 }
 
 .button.secondary {
@@ -3299,7 +3317,7 @@ header .account-actions .button:last-child {
 }
 
 #subscribe-banner-wrap {
-	background: url("../images/subscribe_banner_bg.png") no-repeat center, linear-gradient(to right, #05e6aa, var(--color-secondary));
+	background: url("../images/subscribe_banner_bg.png") no-repeat center, linear-gradient(to right, var(--color-tertiary), var(--color-secondary));
 	background-size: cover
 }
 
@@ -3720,7 +3738,7 @@ header .account-actions .button:last-child {
 }
 
 .service-list .service-item .circle span {
-	color: #16ffd8;
+	color: var(--color-white);
 	font-size: 50px;
 	position: absolute;
 	top: 33px;
@@ -3748,7 +3766,7 @@ header .account-actions .button:last-child {
 }
 
 .service-list .service-item:hover .circle span {
-	color: var(--color-white)
+	color: var(--color-primary)
 }
 
 .service-list .service-item:hover .circle.dark {
@@ -8053,7 +8071,7 @@ header .account-actions .button:last-child {
 }
 
 #footer-bottom p a {
-	color: #16ffd8
+	color: var(--color-primary)
 }
 
 .social-links {
