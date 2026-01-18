@@ -32,7 +32,7 @@ header .mobile-account-options-handler .icon-note{
 }
 
 .promo-banner .icon-check {
-	color: #16ffd8;
+	color: #fff;
 	top: 53px
 }
 .menu-bar {
@@ -125,11 +125,10 @@ header .account-information a.icon-social-instagram:hover {
   }
 }
 @media screen and (max-width: 630px) {
-    #subscribe-banner .subscribe-content .subscribe-header figure {
-      /* display: initial; */
-    }
+  #subscribe-banner .subscribe-content .subscribe-header figure {
+    /* display: initial; */
+  }
 }
-
 
 
 .banner.banner-military img[alt="banner-img"] {
@@ -165,9 +164,6 @@ header .account-information a.icon-social-instagram:hover {
     min-height: 468px;
   }
 }
-
-
-
 
 
 #footer-top .link-info.company-info-2 {
@@ -226,4 +222,34 @@ header .account-information a.icon-social-instagram:hover {
 }
 .social-links-wrap .social-link .icon-social-link:hover {
   color: #b6c6ca;
+}
+
+
+.promo-banner-ul {
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+}
+.promo-banner-ul .promo-banner-li .promo-banner-icon {
+  font-size: 24px;
+}
+.promo-banner-ul .promo-banner-li p {
+  color: #fff;
+}
+@media screen and (max-width: 500px) {
+  .promo-banner-ul {
+    flex-direction: column;
+  }
+  .promo-banner-ul .promo-banner-li {
+    margin: 0 0 20px 0;
+  }
+  .promo-banner-ul .promo-banner-li .promo-banner-icon {
+    margin-right: 5px;
+    color: #fff;
+    position: relative;
+    top: 6px;
+  }
+  .promo-banner-ul .promo-banner-li p {
+    display: inline-block;
+  }
 }
