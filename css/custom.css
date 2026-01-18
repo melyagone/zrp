@@ -217,3 +217,13 @@ header .account-information a.icon-social-instagram:hover {
     display: initial;
   }
 }
+
+.social-links-wrap .social-link .icon-social-link {
+  color: #717f82;
+  font-size: 22px;
+  padding-right: 26px;
+  padding-top: 1px;
+}
+.social-links-wrap .social-link .icon-social-link:hover {
+  color: #b6c6ca;
+}
