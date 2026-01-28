@@ -79,7 +79,7 @@ header .mobile-account-options-handler .icon-note{
   margin-bottom: 20px;
 }
 
-#services.services-v1 {
+#services-v1.services-v1 {
 	padding: 40px 0 10px
 }
 
@@ -131,15 +131,16 @@ header .account-information a.icon-social-instagram:hover {
 }
 
 
-.banner.banner-military img[alt="banner-img"] {
+.banner.banner-military img {
   position: absolute;
   bottom: 20px;
   max-width:100%;
   left: 50%;
   margin-left: -400px;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
 }
 @media screen and (max-width: 1260px) {
-  .banner.banner-military img[alt="banner-img"] {
+  .banner.banner-military img {
     width: initial;
     height: initial;
     bottom: 20px;
@@ -147,7 +148,7 @@ header .account-information a.icon-social-instagram:hover {
   }
 }
 @media screen and (max-width: 800px) {
-  .banner.banner-military img[alt="banner-img"] {
+  .banner.banner-military img {
     width: initial;
     height: initial;
     bottom: 20px;

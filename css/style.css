@@ -1354,6 +1354,8 @@ header,
 .menu-bar,
 .banner,
 #services,
+#services-v1,
+#services-v2,
 #product-sideshow,
 #subscribe-banner,
 #footer-top,
@@ -3710,16 +3712,21 @@ header .account-actions .button:last-child {
 	}
 }
 
-#services-wrap {
+#services-wrap,
+#services-wrap-v1,
+#services-wrap-v2 {
 	background-color: var(--color-white)
 }
 
-#services {
+#services,
+#services-v1,
+#services-v2 {
 	min-height: 500px;
 	padding-top: 134px
 }
 
-#services.services-v2 {
+#services.services-v2,
+#services-v2.services-v2 {
 	min-height: 435px;
 	padding: 60px 0 10px
 }
@@ -3875,7 +3882,9 @@ header .account-actions .button:last-child {
 }
 
 @media screen and (max-width: 1260px) {
-	#services {
+	#services,
+	#services-v1,
+	#services-v2 {
 		padding-top: 60px
 	}
 }
