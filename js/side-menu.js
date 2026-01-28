@@ -17,14 +17,21 @@
 	$db_sidemenu_handler.on('click', { id: '#dashboard-options-menu' }, showSideMenu );
 	$dashboard_options_menu.children('.svg-plus').on('click', { id: '#dashboard-options-menu' }, showSideMenu );	
 
+	// Доданий код: клік по тіньовому шару закриває меню
+	$shadow_film.on('click', function() {
+		closeMenuIfOpen($mobile_menu);
+		closeMenuIfOpen($dashboard_options_menu);
+		toggleVisibility($shadow_film);
+	});
+
 	function showSideMenu(e) {
 		var $menu = $(e.data.id);
 
-		toggleVisibility( $menu );
-		toggleVisibility( $shadow_film );
+		toggleVisibility($menu);
+		toggleVisibility($shadow_film);
 	}
 
-	function toggleVisibility( togglableItem ) {
+	function toggleVisibility(togglableItem) {
 		if( togglableItem.hasClass('closed') ) {
 			togglableItem
 				.removeClass('closed')
@@ -36,9 +43,18 @@
 		}
 	}
 
+	// Нова функція для закриття меню, якщо воно відкрите
+	function closeMenuIfOpen($menu) {
+		if ($menu.hasClass('open')) {
+			$menu
+				.removeClass('open')
+				.addClass('closed');
+		}
+	}
+
 	$side_list_handler
 		.children('.dropdown-item.interactive')
-		.on( 'click', toggleInnerMenu )
+		.on('click', toggleInnerMenu )
 		.children('a').click(function(e) {
 			e.preventDefault();
 		});
