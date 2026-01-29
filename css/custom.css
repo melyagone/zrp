@@ -59,14 +59,16 @@ header .mobile-account-options-handler .icon-note{
 	color: #16ffd8
 }
 
+#footer-top .link-info.company-info-2 .company-info-list a:hover {
+  color: #b6c6ca;
+}
+
 .alert-box.survey {
 	padding-top: 60px /* тут треба подивитись !!! */
 }
 .alert-box.survey p {
 	margin-bottom: 24px;
 }
-
-
 
 .breadcrumbs a {
   color:#fff;
@@ -264,7 +266,8 @@ header .account-information a.icon-social-instagram:hover {
   background-color: #2b373a;
   color: white;
   border: none;
-  padding: 12px 16px;
+  /* padding: 12px 16px; */
+  padding: 10px;
   border-radius: 50%;
   cursor: pointer;
   font-size: 18px;
@@ -280,4 +283,7 @@ header .account-information a.icon-social-instagram:hover {
 }
 #scrollTopBtn:hover {
   background-color: #38474b;
+}
+#scrollTopBtn img {
+  transform: rotate(-90deg);
 }

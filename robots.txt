@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+Sitemap: https://melyagone.github.io/zrp/sitemap.xml
