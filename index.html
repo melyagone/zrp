@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/vendor/owl.carousel.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/vendor/aos.css">
+	<link rel="stylesheet" href="css/vendor/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/custom.css">
 	<link rel="canonical" href="https://melyagone.github.io/zrp/">
 	<!-- Favicon -->
@@ -167,15 +168,94 @@
 	</div>
 	<!-- /MAIN MENU -->
 
+
 	<!-- BANNER -->
 	<div class="banner-wrap">
+		<!-- Додано тільки цю обгортку -->
+		<div class="swiper banner-swiper">
+			<!-- Додано тільки цю обгортку -->
+			<div class="swiper-wrapper">
+				
+				<!-- Слайд 1 - ТВОЯ РОЗМІТКА + swiper-slide -->
+				<div class="swiper-slide banner-slide">
+					<img src="banner/home-banner-1.jpg" alt="Military Training" class="banner-slide-bg-image">
+					<!-- <div class="banner-slide-overlay"></div> -->
+					<div class="banner-content banner-content-with-image">
+						<h1>39 зенітний ракетний полк</h1>
+						<h5>набирає на посади</h5>
+						<p>Шукаєш можливість допомагати армії, але не прагнеш брати участь у бойових діях? Приєднуйся до нашої команди!</p>
+						<img class="banner-shadow-image" src="images/image-main-shade.png" alt="Банер 39 зенітний ракетний полк">
+					</div>
+				</div>
+
+				<div class="swiper-slide banner-slide">
+					<img src="https://images.unsplash.com/photo-1541544181051-e46607bc22a4?w=1920" 
+						alt="Military Training" 
+						class="banner-slide-bg-image">
+					<div class="banner-slide-overlay"></div>
+					<div class="banner-content">
+						<h1>39 зенітний ракетний полк</h1>
+						<h5>набирає на посади</h5>
+						<p>Шукаєш можливість допомагати армії, але не прагнеш брати участь у бойових діях? Приєднуйся до нашої команди!</p>
+					</div>
+				</div>
+
+				<!-- Слайд 2 - Відео -->
+				<div class="swiper-slide banner-slide">
+					<video class="banner-slide-bg-video" autoplay muted loop playsinline>
+						<source src="banner/slider-video.mp4" type="video/mp4">
+					</video>
+					<div class="banner-slide-overlay"></div>
+					<div class="banner-content">
+						<h1>Служба за контрактом</h1>
+						<h5>професійна команда</h5>
+						<p>Працюй у команді професіоналів і здобувай навички, які цінуються скрізь - і в армії, і в цивільному житті</p>
+					</div>
+				</div>
+
+				<!-- Слайд 3 -->
+				<div class="swiper-slide banner-slide">
+					<img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1920" 
+						alt="Technology" 
+						class="banner-slide-bg-image">
+					<div class="banner-slide-overlay"></div>
+					<div class="banner-content">
+						<h1>Підрозділ-новатор</h1>
+						<h5>технології та інновації</h5>
+						<p>Наш підрозділ - лідер ЗСУ за кількістю знищених повітряних цілей і активно розвиває власні технології</p>
+					</div>
+				</div>
+
+				<!-- Слайд 4 -->
+				<div class="swiper-slide banner-slide">
+					<img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920" 
+						alt="Standards" 
+						class="banner-slide-bg-image">
+					<div class="banner-slide-overlay"></div>
+					<div class="banner-content">
+						<h1>Стандарти НАТО</h1>
+						<h5>перевірені боєм</h5>
+						<p>Ми працюємо за стандартами НАТО, адаптованими до реальних бойових умов, і постійно підіймаємо планку ще вище</p>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Навігація -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+
+	<!-- <div class="banner-wrap">
 		<section class="banner banner-military">
 			<h1 data-aos="zoom-in" data-aos-duration="1000">39 зенітний ракетний полк</h1>
 			<h5 data-aos="zoom-in" data-aos-duration="1000">набирає на посади</h5>
 			<p data-aos="zoom-in" data-aos-duration="1000">Шукаєш можливість допомагати армії, але не прагнеш брати участь у бойових діях? Приєднуйся до нашої команди!</p>
 			<img src="images/image-main-shade.png" alt="Банер 39 зенітний ракетний полк" data-aos="zoom-in" data-aos-duration="1000">
 		</section>
-	</div>
+	</div> -->
 	<!-- /BANNER -->
 
 	<!-- SERVICES -->
@@ -516,7 +596,55 @@
 <!-- <script src="js/home-alerts.js"></script> -->
 <!-- Footer -->
 <script src="js/footer.js"></script>
-	<script src="js/vendor/aos.js"></script>
+<script src="js/vendor/aos.js"></script>
+<script src="js/vendor/swiper-bundle.min.js"></script>
+
+
+<!-- Ініціалізація -->
+<script>
+    const swiper = new Swiper('.banner-swiper', {
+        loop: true,
+        speed: 1000,
+        effect: 'fade',
+        
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        keyboard: {
+            enabled: true,
+        },
+
+        // Свайпи вже працюють автоматично!
+        touchRatio: 1,
+        grabCursor: true,
+
+        // Перезапуск відео при зміні слайду
+        on: {
+            slideChange: function () {
+                const videos = document.querySelectorAll('.banner-slide-bg-video');
+                videos.forEach(video => {
+                    video.currentTime = 0;
+                    video.play();
+                });
+            },
+        },
+    });
+</script>
+
+
 <script>
   AOS.init();
 </script>
